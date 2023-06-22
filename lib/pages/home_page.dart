@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final List<Widget> _pages = [
     const PersonList(),
-    const UploadPage(),
+    facebook(),
   ];
 
   int _selectedIndex = 0;
@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Flutter Firebase'),
+          title: const Text('Firebase Dilan'),
         ),
         body: _pages[_selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
@@ -38,8 +38,8 @@ class _HomePageState extends State<HomePage> {
               label: 'Persons',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.upload),
-              label: 'Upload',
+              icon: Icon(Icons.facebook),
+              label: 'Facebook',
             ),
           ],
         ));
